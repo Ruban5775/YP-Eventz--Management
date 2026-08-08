@@ -16,6 +16,16 @@ A modern, responsive event management website developed for **Your Perfect Event
 
 ---
 
+# 👨‍💻 Developer
+
+**Ruban M**
+
+Frontend Developer focused on **React, modern web development, backend API integration, cloud services, and AI-powered business automation**.
+
+🌐 Portfolio: https://ruban.persyntra.com/
+
+---
+
 ## 📌 About the Project
 
 **Your Perfect Eventz Management** is a professional event management company based in Salem, providing event planning and management services for different types of occasions.
@@ -166,59 +176,6 @@ The application follows a full-stack architecture where the React frontend commu
 │ Enquiry Email Notifications  │
 └──────────────────────────────┘
 ```
-
----
-
-# 📩 Contact & Get Quote Workflow
-
-The website includes a contact and quotation enquiry system.
-
-The workflow is:
-
-```text
-Visitor
-   │
-   ▼
-Contact / Get Quote Form
-   │
-   ▼
-React Frontend
-   │
-   │ Form Validation
-   ▼
-PHP API
-   │
-   ├──────────────► MySQL Database
-   │
-   └──────────────► PHP Mail
-                         │
-                         ▼
-                  Business Email
-```
-
-### Workflow Process
-
-**1. Visitor Submission**
-
-A potential customer enters their details through the Contact or Get Quote form.
-
-**2. Frontend Validation**
-
-The React application validates the submitted information before sending it to the backend.
-
-**3. PHP API Processing**
-
-The PHP backend receives and processes the request.
-
-**4. Database Storage**
-
-The enquiry information is stored in MySQL for future reference and administrative management.
-
-**5. Email Notification**
-
-The PHP mail integration sends the enquiry information to the configured business email.
-
-This provides the company with notification when a new enquiry is submitted.
 
 ---
 
@@ -487,84 +444,6 @@ SMTP Username
 SMTP Password
 ```
 
-### ⚠️ Security
-
-Never commit the following to GitHub:
-
-```text
-.env
-.env.local
-.env.production
-Database passwords
-Cloudinary API secrets
-SMTP passwords
-API keys
-Authentication credentials
-Production database information
-Client/customer information
-```
-
-Use `.env.example` or sanitized configuration examples instead.
-
----
-
-# 🗄️ Database
-
-The application uses **MySQL** for persistent application data.
-
-Depending on the implemented modules, the database can contain information such as:
-
-- Services
-- Testimonials
-- Gallery/media references
-- Contact enquiries
-- Event information
-- Administrative data
-
-For a public GitHub repository, only a **sanitized database schema** should be included.
-
-Example:
-
-```sql
-CREATE TABLE contact_leads (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(150) NOT NULL,
-    email VARCHAR(255),
-    phone VARCHAR(30),
-    event_date DATE,
-    message TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-> Real customer enquiries and client information must not be included in the public repository.
-
----
-
-# 📸 Screenshots
-
-## Home Page
-
-![Your Perfect Eventz Home Page](screenshots/home.png)
-
-## Services
-
-![Services](screenshots/services.png)
-
-## Event Gallery
-
-![Event Gallery](screenshots/gallery.png)
-
-## Contact / Get Quote
-
-![Contact](screenshots/contact.png)
-
-## Admin Dashboard
-
-![Admin Dashboard](screenshots/admin-dashboard.png)
-
----
-
 # 📱 Responsive Design
 
 The website is designed to provide a consistent experience across:
@@ -624,69 +503,6 @@ Production credentials and client-specific information are intentionally exclude
 
 ---
 
-# 🌐 Deployment
-
-The website is deployed as a production web application.
-
-The deployment architecture consists of:
-
-```text
-React Production Build
-        │
-        ▼
-Web Hosting / Hostinger
-        │
-        ├──────────► PHP Backend
-        │
-        └──────────► MySQL Database
-
-Cloudinary
-    │
-    └──► Event Media Storage & Delivery
-```
-
-The frontend is built using:
-
-```bash
-npm run build
-```
-
-The generated `dist/` directory contains the production-ready frontend.
-
----
-
-# 🧪 API Testing
-
-The backend APIs can be tested during development using:
-
-- Postman
-- Browser Developer Tools
-- REST API clients
-
-Typical request flow:
-
-```text
-React Frontend
-      │
-      ▼
-POST /api/contact.php
-      │
-      ▼
-PHP Backend
-      │
-      ├──────► MySQL
-      │
-      └──────► PHP Mail
-      │
-      ▼
-JSON Response
-      │
-      ▼
-React UI
-```
-
----
-
 # 🎯 What This Project Demonstrates
 
 This project demonstrates practical experience with:
@@ -735,33 +551,6 @@ This project demonstrates practical experience with:
 - Production deployment
 - Environment configuration
 - Client-focused development
-
----
-
-# 🔮 Future Improvements
-
-Potential future enhancements include:
-
-- Advanced admin analytics dashboard
-- Event booking management
-- Online quotation generation
-- Automated enquiry follow-ups
-- Customer notification system
-- Advanced gallery categorization
-- Image optimization pipelines
-- Role-based admin access
-- Event calendar management
-- CRM integration
-
----
-
-# 👨‍💻 Developer
-
-**Ruban M**
-
-Frontend Developer focused on **React, modern web development, backend API integration, cloud services, and AI-powered business automation**.
-
-🌐 Portfolio: https://persyntra.com/
 
 ---
 
